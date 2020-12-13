@@ -29,7 +29,7 @@ The first aggregation scheme happened for each of the 420 M food items entry. Ea
 
 Then, they computed different data related to the nutrients informations, such as the total energy in kilocalories (_kcal_), as the dataset provides the amount of nutrients in grams (_g_). As each nutrients has a fix _g_ / _kcal_ ratio, the authors were able to compute the total amount of energy, as well as the relative amount of energy related to each nutrients.
 
-On top of this, the different
+On top of this, each food item is associated to one category. The categorization includes 17 non-overlapping classes, available in the [Appendices](#food-categories).
 
 ## Appendices 
 
