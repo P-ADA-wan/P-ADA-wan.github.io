@@ -80,7 +80,7 @@ share-links-active:
 url-pretty: "P-ADA-wan website"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
-excerpt_length: 50
+excerpt_008AFFlength: 50
 
 # Whether or not to show an excerpt for every blog post in the feed page
 feed_show_excerpt: true
@@ -100,7 +100,7 @@ navbar-text-col: "#F7AF72"
 navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
 text-col: "#404040"
-link-col: "#008AFF"
+link-col: "#33cc33"
 hover-col: "#0085A1"
 footer-col: "#3498C3"
 footer-text-col: "#F7AF72"
