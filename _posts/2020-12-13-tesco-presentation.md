@@ -21,7 +21,21 @@ and borough. They computed the average food product for each areas, and linked i
 
 ## Data aggregation
 
-420 M food items purchased by 1.6 M fidelity
-card owners who shopped at the 411 Tesco stores in Greater London over the course of the entire year
-of 2015, aggregated at the level of census areas to preserve anonymity. F
+We can divide the aggregation of the Tesco dataset in two main parts.
+
+### A link between the product and its nutrition properties
+
+The first aggregation scheme happened for each of the 420 M food items entry. Each entry was under the form {_customer area, GTIN, timestamp_}. The **GTIN** (_Global Trade Item Number_) is used by companies to uniquely identify their trade items globally. The authors joined each entry with its corresponding nutrition informations, such as {_total energy, net weight, fats, saturated fats, carbohydrates, free sugars, proteins, fibers_}, on top of _volume_ and _relative volume of alcohol_ for drinks.
+
+Then, they computed different data related to the nutrients informations, such as the total energy in kilocalories (_kcal_), as the dataset provides the amount of nutrients in grams (_g_). As each nutrients has a fix _g_ / _kcal_ ratio, the authors were able to compute the total amount of energy, as well as the relative amount of energy related to each nutrients.
+
+On top of this, the different
+
+## Appendices 
+
+### Food categories : 
+
+fruit & vegetables; grains (e.g., bread, rice, pasta); red meat (e.g., pork, beef); poultry; fish; dairy (e.g., milk, cheese);
+eggs; fats & oils (e.g., butter, olive oil); sweets (e.g., chocolate, candies); readymade items (e.g., pre-cooked meal);
+sauces (e.g., tomato sauce, soups); tea & coffee; soft drinks (e.g., carbonated sodas); bottled water; beer; wine; spirits.
 
