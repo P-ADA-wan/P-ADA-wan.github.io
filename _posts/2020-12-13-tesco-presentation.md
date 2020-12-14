@@ -66,7 +66,7 @@ The authors joined this Tesco dataset to dataset related to obesity and Type-2 d
 
 The authors computed the Spearman rank correlation between the energy, the nutrients and the nutrients entropy of the average product in an area and the prevalence of obese and overweight children and adults, as well as diabetes prevalence. Those result are displayed below. We should note that only statistically significant correlations (p < 0.05) are shown.
 
-![Correlation results](https://zupimages.net/viewer.php?id=20/51/rsur.png){: .mx-auto.d-block :}
+![Correlation results](https://zupimages.net/up/20/51/rsur.png){: .mx-auto.d-block :}
 
 To build stronger evidences of the link between the dataset and food related illnesses - thus, to show that the food descriptors provided dataset are not proxies, the authors then ran an ordinary least square regression.
 
