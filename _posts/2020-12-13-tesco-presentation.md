@@ -58,3 +58,9 @@ residents aged [18–64], number residents aged 65+, average age, surface area, 
 ### Tesco aggregation formula 
 
 $h_\theta(x) = \Large\frac{1}{1 + \mathcal{e}^{(-\theta^\top x)}}$
+
+\begin{equation}
+$h_\theta(x) = \Large\frac{1}{1 + \mathcal{e}^{(-\theta^\top x)}}$
+\end{equation}
+
+$h_\theta(x) = \Large\frac{1}{1 + \mathcal{e}^{(-\theta^\top x)}}$ <div style="text-align: right"> your-text-here </div>
