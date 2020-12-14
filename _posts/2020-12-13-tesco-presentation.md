@@ -31,6 +31,16 @@ Then, they computed different data related to the nutrients informations, such a
 
 On top of this, each food item is associated to one category. The categorization includes 17 non-overlapping classes, available in the [Appendices](#food-categories).
 
+### An aggregation between food purchase and geographical areas
+
+The authors mapped the purchases to geographical areas, as mentionned in the introduction. This aggregation scheme happened for all geographical levels, from LSOA to Borough. This aggregation scheme allowed the authors to have multiple granularity levels, which enable a wider range of studies that might benefit from having either a high number of smaller areas containing fewer datapoints or a lower number of areas characterized by more robust statistics.
+
+Those areas have basic census statistics collected by the ONS in 2015. An exhaustive list of these statistics present in the joined dataset is available in the [Appendices](#geographical-areas-statistics). The authors aggregated the Tesco data relative to each areas, and provided 3 different sets of variables.
+
+The first group of variables expresses the Tesco **penetration** in an area. The representativeness of each area is computed 
+
+
+
 ## Appendices 
 
 ### Food categories : 
@@ -39,3 +49,12 @@ fruit & vegetables; grains (e.g., bread, rice, pasta); red meat (e.g., pork, bee
 eggs; fats & oils (e.g., butter, olive oil); sweets (e.g., chocolate, candies); readymade items (e.g., pre-cooked meal);
 sauces (e.g., tomato sauce, soups); tea & coffee; soft drinks (e.g., carbonated sodas); bottled water; beer; wine; spirits.
 
+
+### Geographical areas stastistics
+
+_population, number of males, number of females, number residents aged [0–17], number
+residents aged [18–64], number residents aged 65+, average age, surface area, density of residents_
+
+### Tesco aggregation formula 
+
+$h_\theta(x) = \Large\frac{1}{1 + \mathcal{e}^{(-\theta^\top x)}}$
