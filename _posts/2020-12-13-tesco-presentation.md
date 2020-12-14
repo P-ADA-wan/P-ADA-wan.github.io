@@ -2,7 +2,7 @@
 layout: post
 title: Tesco Grocery 1.0 paper
 subtitle: A brief overview of the Tesco Grocery 1.0 paper
-cover-img: /assets/img/tesco_logo.jpg
+cover-img: /assets/img/Tesco_logo.png
 comments: true
 ---
 
