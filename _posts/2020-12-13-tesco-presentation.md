@@ -37,8 +37,20 @@ The authors mapped the purchases to geographical areas, as mentionned in the int
 
 Those areas have basic census statistics collected by the ONS in 2015. An exhaustive list of these statistics present in the joined dataset is available in the [Appendices](#geographical-areas-statistics). The authors aggregated the Tesco data relative to each areas, and provided 3 different sets of variables.
 
-The first group of variables expresses the Tesco **penetration** in an area. The representativeness of each area is computed 
+The first group of variables expresses the Tesco **penetration** in an area. The representativeness, which is the ratio between the number of customers in an area and the population, is computed. A normalized representativeness is also computed.
 
+Then, the authors decided to compute the average product bought for each area. They computed multiple **nutrional properties** about this average product, such as the _weight_ or the _volume_, the _energy_, the _energy - density_, and the grams of each indivdual nutrients ${_nutrients_}_{i}$. Then, they compute the energy per nutrient, as well as the frequency of each nutrients, and the frequency of energey per nutrient. They managed to compute the entropy of these 2 frequencies. More details of the formulas in the [Appendices](#tesco-aggregation-formula).
+
+The last group of variables is about the **Product categories**. The authors computed the probability distribution of items belonging to the 17 different product categories being purchased in area a and the entropy of that distribution. They also computed the relative weight of products belonging to any category compared to the total weight, and its entropy.
+
+### Data biases and limitations
+
+Several limitations were pointed by the authors:
+
++ **Representativeness**: As this study collect the grocery purchases from Tesco's customers owning a Clubcard submission, this set of Clubcard owners might not be representative of the overall population.
++ **Coverage**: The concentration of Tesco is higher in the northern part of London, thus some areas have a low penetration rate.
++ **Limited scope**: This dataset only show the grocery purchases at Tesco - thus, the food consumption in restaurants or the food bought at other grocery stores is not included in the dataset.
++ **Average product** As the data is aggregated to create the average product consumed in an area, this is a limitation to any study that requires an average representation at an individual level rather than at a geographical level.
 
 
 ## Appendices 
@@ -57,10 +69,8 @@ residents aged [18–64], number residents aged 65+, average age, surface area, 
 
 ### Tesco aggregation formula 
 
-$h_\theta(x) = \Large\frac{1}{1 + \mathcal{e}^{(-\theta^\top x)}}$
+**TODO : Either se chauffer à tout faire, either enlever cette partie**
 
-\begin{equation}
-$h_\theta(x) = \Large\frac{1}{1 + \mathcal{e}^{(-\theta^\top x)}}$
-\end{equation}
-
-$h_\theta(x) = \Large\frac{1}{1 + \mathcal{e}^{(-\theta^\top x)}}$ <div style="text-align: right"> your-text-here </div>
+(1) $h_\theta(x) = \Large\frac{1}{1 + \mathcal{e}^{(-\theta^\top x)}}$
+(1) _representativeness(a)_ = _customers(a)_/_population(a)_
+(1) $_representativeness_^{norm}(a)$ = $_representativeness_(a) - min{representativeness} $
