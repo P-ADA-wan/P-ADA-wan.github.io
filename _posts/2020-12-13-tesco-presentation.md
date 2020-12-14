@@ -62,9 +62,19 @@ To ensure the representativeness of the dataset, the authors stated that we can 
 
 ### Validation of health outcomes
 
-The authors joined this Tesco dataset to dataset related to obesity and Type-II diabetes, as these health diseases are strongly correlated with diet. 
+The authors joined this Tesco dataset to dataset related to obesity and Type-2 diabetes, as these health diseases are strongly correlated with diet. 
+
+The authors computed the Spearman rank correlation between the energy, the nutrients and the nutrients entropy of the average product in an area and the prevalence of obese and overweight children and adults, as well as diabetes prevalence. Those result are displayed below. We should note that only statistically significant correlations (p < 0.05) are shown.
 
 ![](assets/img/figure_5.png)
+
+To build stronger evidences of the link between the dataset and food related illnesses - thus, to show that the food descriptors provided dataset are not proxies, the authors then ran an ordinary least square regression.
+
+Using the two highest-correlated factors and four control variables accounting for demographics, they managed to get a R² ratio of 0.613, which denotes a high goodness of fit. Using only the two factors _energy-carbs_ and $H_{_energy-nutrients}$, the R² ratio remained high (0.56)
+
+These result showed that the dataset make sense, as they found correlations which were expected between the average food product and related health diseases.
+
+
 ## Appendices 
 
 ### Food categories : 
