@@ -6,7 +6,7 @@
 # --- Required options --- #
 
 # Name of website
-title: P-ADA-WAN project
+title: P-ADA-WAN Tesco Data Story
 
 # Your name to show in the footer
 author: Damien Gengler, Vincent Yuan & Faustine Vigneau
@@ -16,11 +16,13 @@ author: Damien Gengler, Vincent Yuan & Faustine Vigneau
 navbar-links:
   About us: "aboutus"
   Credits: "credits"
-  Resources:
+  Useful Resources:
     - Tesco Paper: "https://www.nature.com/articles/s41597-020-0397-7"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     
-  Our Git Repository: "https://github.com/P-ADA-wan/P-ADA-wan.github.io"
+  Github Repositories: 
+    - Analysis Notebook : "https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_p-ada-wan"
+    - Data Story : "https://github.com/P-ADA-wan/P-ADA-wan.github.io"
 
 # --- Logo --- #
 

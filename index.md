@@ -1,24 +1,27 @@
 ---
 layout: page
-title: Tesco paper extension
-subtitle: We are three young Jedis seeking for the well being of citizens in the Galactic Republic.Too much young padawans are overweight and we want to help them understand why.
+title: A deeper look at the Tesco dataset using food categories
+subtitle: We are three young Jedis seeking for the well being of citizens in the Galactic Republic. 
+cover-img: /assets/img/london.jpg
 comments: true
 bokeh: true
 ---
 
 
-In this blog post, we'll give to the young padawans an overview of the paper [Tesco Grocery 1.0, a large-scale dataset of grocery purchases in London](https://www.nature.com/articles/s41597-020-0397-7). This paper was made by some experimented Jedi that used this dataset wisely. We tried to follow their path by extending the paper, as explained in the other blog posts.
+Food consumption is a very central part of human lives, by analyzing food habits we can deduce a large panel of health conditions and human behaviors. The Tesco Paper analysis focused on describing their methodology and results about Obesity and Diabetes prevalence. Throughout this data story, we will explore different aspects of the dataset by looking at the Obesity problem using the food categories first. We will then visualize the geographic repartition of food categories. Finally, we will analyze the link between food consumption and the Income per Area.
 
-
+- - -
 
 # I - Introduction to the Tesco paper 
 
-The Tesco Grocery 1.0 dataset is a record of over 420 M food items, purchased by 1.6M fidelity card owners across Greater London. The authors aggregated the data at different levels, using the same geographical delimitations as the [Office for National statistics](https://www.ons.gov.uk/), dividing into different granularities: LSOA (Lower Super Output Area), MSOA (Medium Super Output Area), Ward,
-and borough. They computed the average food product for each areas, and linked it to health outcomes strongly linked to food consumption dataset. Then, they established a correlation between the food consumed and the prevalence of health diseases in an area.
+In this first part, we'll give to the young padawans an overview of the paper [Tesco Grocery 1.0, a large-scale dataset of grocery purchases in London](https://www.nature.com/articles/s41597-020-0397-7). This paper was made by some experimented Jedi that used this dataset wisely. We tried to follow their path by extending the paper, as explained in the other blog posts.
+
+The Tesco Grocery 1.0 dataset is a record of over 420 M food items, purchased by 1.6M fidelity card owners across Greater London. The authors aggregated the data at different levels, using the same geographical delimitations as the [Office for National statistics](https://www.ons.gov.uk/), dividing it into different granularities: LSOA (Lower Super Output Area), MSOA (Medium Super Output Area), Ward,
+and borough. They computed the average food product for each area and linked it to health outcomes strongly linked to the food consumption dataset. Then, they established a correlation between the food consumed and the prevalence of health diseases in an area.
 
 ## Data aggregation
 
-We can divide the aggregation of the Tesco dataset in two main parts.
+We can divide the aggregation of the Tesco dataset into two main parts.
 
 ### A link between the product and its nutrition properties
 
@@ -30,23 +33,23 @@ On top of this, each food item is associated to one category. The categorization
 
 ### An aggregation between food purchase and geographical areas
 
-The authors mapped the purchases to geographical areas, as mentionned in the introduction. This aggregation scheme happened for all geographical levels, from LSOA to Borough. This aggregation scheme allowed the authors to have multiple granularity levels, which enable a wider range of studies that might benefit from having either a high number of smaller areas containing fewer datapoints or a lower number of areas characterized by more robust statistics.
+The authors mapped the purchases to geographical areas, as mentioned in the introduction. This aggregation scheme happened for all geographical levels, from LSOA to Borough. This aggregation scheme allowed the authors to have multiple granularity levels, which enable a wider range of studies that might benefit from having either a high number of smaller areas containing fewer datapoints or a lower number of areas characterized by more robust statistics.
 
-Those areas have basic census statistics collected by the ONS in 2015. An exhaustive list of these statistics present in the joined dataset is available in the [Appendices](#geographical-areas-statistics). The authors aggregated the Tesco data relative to each areas, and provided 3 different sets of variables.
+Those areas have basic census statistics collected by the ONS in 2015. An exhaustive list of these statistics present in the joined dataset is available in the [Appendices](#geographical-areas-statistics). The authors aggregated the Tesco data relative to each area and provided 3 different sets of variables.
 
-The first group of variables expresses the Tesco **penetration** in an area. The representativeness, which is the ratio between the number of customers in an area and the population, is computed. A normalized representativeness is also computed.
+The first group of variables expresses the Tesco **penetration** in an area. The representativeness, which is the ratio between the number of customers in an area and the population, is computed. Normalized representativeness is also computed.
 
-Then, the authors decided to compute the average product bought for each area. They computed multiple **nutrional properties** about this average product, such as the _weight_ or the _volume_, the _energy_, the _energy - density_, and the grams of each indivdual nutrients $nutrients_{i}$. Then, they compute the energy per nutrient, as well as the frequency of each nutrients, and the frequency of energey per nutrient. They managed to compute the entropy of these 2 frequencies. More details of the formulas in the [Appendices](#tesco-aggregation-formula).
+Then, the authors decided to compute the average product bought for each area. They computed multiple **nutritional properties** about this average product, such as the _weight_ or the _volume_, the _energy_, the _energy - density_, and the grams of each individual nutrient $nutrients_{i}$. Then, they compute the energy per nutrient, as well as the frequency of each nutrients, and the frequency of energy per nutrient. They managed to compute the entropy of these 2 frequencies. More details of the formulas in the [Appendices](#tesco-aggregation-formula).
 
-The last group of variables is about the **Product categories**. The authors computed the probability distribution of items belonging to the 17 different product categories being purchased in area a and the entropy of that distribution. They also computed the relative weight of products belonging to any category compared to the total weight, and its entropy.
+The last group of variables is about the **Product categories**. The authors computed the probability distribution of items belonging to the 17 different product categories being purchased in an area a and the entropy of that distribution. They also computed the relative weight of products belonging to any category compared to the total weight and its entropy.
 
 ### Data biases and limitations
 
 Several limitations were pointed by the authors:
 
-+ **Representativeness**: As this study collect the grocery purchases from Tesco's customers owning a Clubcard submission, this set of Clubcard owners might not be representative of the overall population.
++ **Representativeness**: As this study collects the grocery purchases from Tesco's customers owning a Clubcard submission, this set of Clubcard owners might not be representative of the overall population.
 + **Coverage**: The concentration of Tesco is higher in the northern part of London, thus some areas have a low penetration rate.
-+ **Limited scope**: This dataset only show the grocery purchases at Tesco - thus, the food consumption in restaurants or the food bought at other grocery stores is not included in the dataset.
++ **Limited scope**: This dataset only shows the grocery purchases at Tesco - thus, the food consumption in restaurants or the food bought at other grocery stores is not included in the dataset.
 + **Average product** As the data is aggregated to create the average product consumed in an area, this is a limitation to any study that requires an average representation at an individual level rather than at a geographical level.
 
 ## Technical validation
@@ -61,23 +64,25 @@ To ensure the representativeness of the dataset, the authors stated that we can 
 
 The authors joined this Tesco dataset to dataset related to obesity and Type-2 diabetes, as these health diseases are strongly correlated with diet. 
 
-The authors computed the Spearman rank correlation between the energy, the nutrients and the nutrients entropy of the average product in an area and the prevalence of obese and overweight children and adults, as well as diabetes prevalence. Those result are displayed below. We should note that only statistically significant correlations (p < 0.05) are shown.
+The authors computed the Spearman rank correlation between the energy, the nutrients and the nutrients entropy of the average product in an area and the prevalence of obese and overweight children and adults, as well as diabetes prevalence. Those results are displayed below. We should note that only statistically significant correlations (p < 0.05) are shown.
 
 ![Correlation results](https://zupimages.net/up/20/51/rsur.png){: .mx-auto.d-block :}
 
-To build stronger evidences of the link between the dataset and food related illnesses - thus, to show that the food descriptors provided dataset are not proxies, the authors then ran an ordinary least square regression.
+To build stronger evidence of the link between the dataset and food-related illnesses - thus, to show that the food descriptors provided dataset are not proxies, the authors then ran an ordinary least square regression.
 
-Using the two highest-correlated factors and four control variables accounting for demographics, they managed to get a R² ratio of 0.613, which denotes a high goodness of fit. Using only the two factors _energy-carbs_ and $H_{_energy-nutrients}$, the R² ratio remained high (0.56)
+Using the two highest-correlated factors and four control variables accounting for demographics, they managed to get an R² ratio of 0.613, which denotes high goodness of fit. Using only the two factors _energy-carbs_ and $H_{_energy-nutrients}$, the R² ratio remained high (0.56)
 
-These result showed that the dataset make sense, as they found correlations which were expected between the average food product and related health diseases.
+These result showed that the dataset makes sense, as they found correlations which were expected between the average food product and related health diseases.
 
 For more details about the Paper and the Data itself, the reader is invited to refer directly to the paper. 
 
 
 Now that we summarized the paper, we can present the goal of our extension and analysis. 
-Our first goal is to dig deeper in the analysis of the Children Obesity dataset already presented in the paper.
+Our first goal is to dig deeper into the analysis of the Children Obesity dataset already presented in the paper.
 
-We will then geographically visualize the different food type consumption in London and then analyse the link with the Mean Income by area. With this we want to be able to see if given a shopping basket, we are able to predict the Income of the shopper. 
+We will then geographically visualize the different food type consumption in London and then analyze the link with the Mean Income by area. With this we want to be able to see if given a shopping basket, we can to predict the Income of the shopper. 
+
+- - -
 
 # II - Children overweight prevalence
 
@@ -180,7 +185,11 @@ In our case, even though we have statistically significant correlations between 
 
 We also learnt that our intuition about correlation might be wrong sometimes. We thought that obesity among children and grocery shopping was correlated, but it was not the case.
 
+<<<<<<< HEAD
 As we saw that food categories are more impactful than we thought, and that the paper haven't used at all the food categories, we decided to explore this part of the dataset more in depth. We will continue by visualizing the proportion of purchases for each category across London's areas.
+=======
+- - -
+>>>>>>> 3d2dffa5e3157664bb822340e524d4be13ea60bb
 
 # III - Geographical Visualization
 
@@ -207,23 +216,33 @@ On top of that, by moving your mouse all over the map you can discover the exact
 
 We can notice that the distributions of the proportion of purchases for each food category are pretty different. Some food categories show uniform distributions across the areas whereas some others show very disparate distributions. 
 
-However, there is one thing we have to note on this representation: if there is one area that has an exceptionnaly high proportion of a certain category, it will be hard to visualize the differences in the areas. For example, the fraction of soft drink tends to be between 2 and 5 % across the areas. However, there is one area that has a fraction of 12% of purchases of soft drinks: it shades all the other areas in the graph.
+However, there is one thing we have to note on this representation: if there is one area that has an exceptionally high proportion of a certain category, it will be hard to visualize the differences in the areas. For example, the fraction of soft drink tends to be between 2 and 5 % across the areas. However, there is one area that has a fraction of 12% of purchases of soft drinks: it shades all the other areas in the graph.
 
 For instance, the consumption of beer seems to be the same all over the city (less than 2%), except in some outliers areas. On contrary, the consumption of meat is 6 times higher in the northern, and centered wards of London compared to some southern wards. We observe almost the same thing for the poultry.
 
 ## Interpretations
 
-We will now try to interpret the different results. However, as we're not londonese, we don't know the stereotypes about London's areas, and we will definitely miss some interpretations.
+We will now try to interpret the different results. However, as we're not londoners, we don't know the stereotypes about London's areas, and we will miss some interpretations.
 
-The consumption of ready-made meal is higher in the suburbans areas. It might be because the residents of these areas have a longer commute time - thus, they have less time to cook and buy more ready-made meal.
+The consumption of ready-made meal is higher in the suburbans areas. It might be because the residents of these areas have a longer commute time - thus, they have less time to cook and buy more ready-made meals.
 
+<<<<<<< HEAD
 The consumption of meat is higher in the northern and centered part of London. Meat is a pretty expensive product, and there might be a link between the mean income of an area and the meat consumption. We would not be surprised if we observe that wards with an higher meat consumption are wealthier.
+=======
+The consumption of meat is higher in the northern and central part of London. Meat is a pretty expensive product, and there might be a link between the mean income of an area and the meat consumption. We would not be surprised if we observe that wards with higher meat consumption are wealthier.
+>>>>>>> 3d2dffa5e3157664bb822340e524d4be13ea60bb
 
 ## A new hope 
 
 Intrigued by these observations, we will try to see now if there exist a correlation between the income of people and the proportion of purchases of some food category in the Tesco shops.
 
+<<<<<<< HEAD
 # IV - Analysis of the link between food category proportion and income
+=======
+- - -
+
+# IV - Analysis of the link between Food category proportion and Income
+>>>>>>> 3d2dffa5e3157664bb822340e524d4be13ea60bb
 
 We have found a dataset representing the average income for the different areas. We will link this dataset to our previous work on food categories, and discover if there's a correlation or not between food categories and income.
 
@@ -309,8 +328,23 @@ To have a more visual interpretation of this regression, we plotted the predicte
 
 These results alongside with the correlation found above show us that we can predict, with a pretty good accuracy, the mean income of an area based on the fraction of food categories. 
 
-# Conclusion 
+- - -
+
+# V - Conclusion 
+
+We now summarize the findings of our extension work. 
+
+- In the first part we used machine learning techniques to find the link between food consumption and children obesity following NHS guidelines but it did not give much results. When working with food categories we got better results. We didn't want to over interpret data as the results did not make much sense. Indeed, we were afraid to dig too much into what appeared to be a spurious correlation.   
+
+- Next we explored our data from a geographical point of view using Chloropleths-map visualizations. We could observe that the distribution of food proportion was varying drastically for each food category and was often quite sparse. This left us wondering what could cause this sparsity.
+
+- In the last part we looked at Mean Income over the city and found relatively flagrant correlations. Running Machine Learning techniques on our data allowed us to dig deeper into these link and train a linear regression model that allow us to predict pretty accurately the mean income. 
+
+Overall we are quite happy with the results we find while researching our extension. We also managed to use several concepts of the course and improve our data analysis knowledge. While our analysis covered several subjects, we only explored only a small part of what was doable with the Tesco Dataset and there is still a lot of valueable information to extract from it.
+
+
 
 # Notes 
-- Preciser que on prend pas en compte l'inflation 
-- All precise data are available in the note book 
+All precise data are available in our notebook available in the [P-ADA-WAN GitHub](https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_p-ada-wan).
+
+May the Data Force be with you ! 
