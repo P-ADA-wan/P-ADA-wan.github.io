@@ -194,30 +194,34 @@ To try to answer all these questions, we make plots of the distribution of a cer
 
 
 ## Visualizations 
-Each plot below represents the mean proportion of purchase of a certain food category per ward. To see all the plots, you can click on this [link](_posts/2020-02-26-flake-it-till-you-make-it.md).
-On top of that, by moving your mouse all over the map you can discover the exact mean proportion of purchase of a certain food category, the mean income and the median income in each ward.
+Each plot below represents the mean proportion of purchase of a certain food category per ward. To see all the plots, you can click on this [link](posts/2020-02-26-flake-it-till-you-make-it.md).
+On top of that, by moving your mouse all over the map you can discover the exact mean proportion of purchase of a certain food category, the mean income, and the median income in each ward.
 
 {% include test.html %}
 
 ## Observations
-We see that the distributions of proportion of purchases of food category are pretty different.
-Some food categories shows uniform distributions whereas some others show very disparate distributions.
-For instance, the comsuption of beer, soft drinks and tea/coffee seem to be the same all over the city. In contrary, the consumption of meat is 6 times higher in the northern and centered wards of London compared to some southern ward. We observe almost the same thing for the poultry.
- The distribution of ready made, sweets and grains seem to be more important in the southern, eastern and western edge of the city. It is particularly true for ready made where the consumption of this category is almost 50 time higher between some edge parts and some city centered parts.
 
-## What are the causes of these observations ?
+We can notice that the distributions of the proportion of purchases for each food category are pretty different. Some food categories show uniform distributions across the areas whereas some others show very disparate distributions. 
 
-Many factors can influence these observations. 
-First, let’s not forget that the data we use comes from the Tesco shops only . Indeed, people coming to Tesco does not represent all the inhabitants of a ward and the Tesco paper has shown that the representativeness of this data is to some extent limited.
-Therefore, we should not exclude the hypothesis that if we had the data of all food retail markets, we would observe different results. 
-However, some patterns seem to appear clearly in our plots. For instance, we can’t help but notice that the distribution of meat (read meat and poultry) is higher in the northern and centered parts of London.
-Meat is a pretty expensive product and we wonder if there can be a link between the income of people and their consumption of meat (at least at Tesco shops). It would not be so surprising to observe that in the wards where people are wealthier, they buy more meat. 
-In addition, it is possible that the observation about the important readymade comsuption in some wards is also linked with the income of the people. Middle-class people generally have healthier diets than lower-class people and would then consume less readymade products.
+However, there is one thing we have to note on this representation: if there is one area that has an exceptionnaly high proportion of a certain category, it will be hard to visualize the differences in the areas. For example, the fraction of soft drink tends to be between 2 and 5 % across the areas. However, there is one area that has a fraction of 12% of purchases of soft drinks: it shades all the other areas in the graph.
+
+For instance, the consumption of beer seems to be the same all over the city (less than 2%), except in some outliers areas. On contrary, the consumption of meat is 6 times higher in the northern, and centered wards of London compared to some southern wards. We observe almost the same thing for the poultry.
+
+## Interpretations
+
+We will now try to interpret the different results. However, as we're not londonese, we don't know the stereotypes about London's areas, and we will definitely miss some interpretations.
+
+The consumption of ready-made meal is higher in the suburbans areas. It might be because the residents of these areas have a longer commute time - thus, they have less time to cook and buy more ready-made meal.
+
+The consumption of meat is higher in the northern and centered part of London. Meat is a pretty expensive product, and there might be a link between the mean income of an area and the meat consumption. We would not be surprise if we observe that wards with an higher meat consumption are wealthier.
 
 ## A new hope 
+
 Intrigued by these observations, we will try to see now if there exist a correlation between the income of people and the proportion of purchases of some food category in the Tesco shops.
 
 # IV - Analysis of the link between Food category proportion and Income
+
+We have found a dataset representing the average income for the different areas. We will explore 
 
 ## Presentation of the dataset
 
