@@ -1,6 +1,6 @@
 ---
 layout: page
-title: A deeper look at the Tesco dataset using the food categories
+title: A deeper look at the Tesco dataset using food categories
 subtitle: We are three young Jedis seeking for the well being of citizens in the Galactic Republic.Too much young padawans are overweight and we want to help them understand why.
 comments: true
 bokeh: true
