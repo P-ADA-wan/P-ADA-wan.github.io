@@ -2,6 +2,7 @@
 layout: page
 title: A deeper look at the Tesco dataset using food categories
 subtitle: We are three young Jedis seeking for the well being of citizens in the Galactic Republic. 
+cover-img: /assets/img/london.jpeg
 comments: true
 bokeh: true
 ---
