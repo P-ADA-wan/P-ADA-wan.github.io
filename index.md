@@ -7,11 +7,13 @@ bokeh: true
 ---
 
 
-In this blog post, we'll give to the young padawans an overview of the paper [Tesco Grocery 1.0, a large-scale dataset of grocery purchases in London](https://www.nature.com/articles/s41597-020-0397-7). This paper was made by some experimented Jedi that used this dataset wisely. We tried to follow their path by extending the paper, as explained in the other blog posts.
+Food consumption is a very central part of the human lifes, by analysing food habits we can deduce a large pannel of health conditions and human behaviours. The Tesco Paper analysis focused on describing their methodology and results about Obesity and Diabetes prevalence. Throughout this data story we will explore different aspects of the dataset by looking at the Obesity problem using the food categories first. We will then visualize the geographic repartition of food categories. Finally we will analyse the link between the food consumption and the Income per Area. 
 
-
+- - -
 
 # I - Introduction to the Tesco paper 
+
+In this first part, we'll give to the young padawans an overview of the paper [Tesco Grocery 1.0, a large-scale dataset of grocery purchases in London](https://www.nature.com/articles/s41597-020-0397-7). This paper was made by some experimented Jedi that used this dataset wisely. We tried to follow their path by extending the paper, as explained in the other blog posts.
 
 The Tesco Grocery 1.0 dataset is a record of over 420 M food items, purchased by 1.6M fidelity card owners across Greater London. The authors aggregated the data at different levels, using the same geographical delimitations as the [Office for National statistics](https://www.ons.gov.uk/), dividing it into different granularities: LSOA (Lower Super Output Area), MSOA (Medium Super Output Area), Ward,
 and borough. They computed the average food product for each area and linked it to health outcomes strongly linked to the food consumption dataset. Then, they established a correlation between the food consumed and the prevalence of health diseases in an area.
@@ -78,6 +80,8 @@ Now that we summarized the paper, we can present the goal of our extension and a
 Our first goal is to dig deeper into the analysis of the Children Obesity dataset already presented in the paper.
 
 We will then geographically visualize the different food type consumption in London and then analyze the link with the Mean Income by area. With this we want to be able to see if given a shopping basket, we can to predict the Income of the shopper. 
+
+- - -
 
 # II - Children overweight prevalence
 
@@ -180,6 +184,8 @@ In our case, even though we have statistically significant correlations between 
 
 We also learnt that our intuition about correlation might be wrong sometimes. We thought that obesity among children and grocery shopping was correlated, but it was not the case.
 
+- - -
+
 # III - Geographical Visualization
 As presented in the previous part, we have at our disposal a huge dataset containing the food purchases made in the Tesco shops within the boundaries of London. Faced with all this data, we are a little lost and ask ourselves where to begin. And suddenly we remember that we learned, during our Padawan formation, how to become a data vizard. We take out our most beautiful tools and begin to make some visualizations to understand better our data.
 We have many features available for purchases. We notice that the Tesco paper did not deeply explore the different **food categories**. Therefore, we decide to focus on these.
@@ -218,6 +224,8 @@ The consumption of meat is higher in the northern and central part of London. Me
 ## A new hope 
 
 Intrigued by these observations, we will try to see now if there exist a correlation between the income of people and the proportion of purchases of some food category in the Tesco shops.
+
+- - -
 
 # IV - Analysis of the link between Food category proportion and Income
 
@@ -306,7 +314,9 @@ We find that the probability of predicing Income off by more than 10000 pounds i
 
 These results alongside with the correlation found above show us that we can predict, with a pretty good accuracy the mean income of an area based on the the fraction of food categories. 
 
-# Conclusion 
+- - -
+
+# V - Conclusion 
 
 We now summarize the findings of our extension work. 
 
