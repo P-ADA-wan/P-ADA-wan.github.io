@@ -75,9 +75,9 @@ For more details about the Paper and the Data itself, the reader is invited to r
 
 
 Now that we summarized the paper, we can present the goal of our extension and analysis. 
-Our first goal is to dig deeper in the analysis of the Children Obesity dataset already presented in the paper. <strong> Ajouter du BS sur pq on fait ça </strong>
+Our first goal is to dig deeper in the analysis of the Children Obesity dataset already presented in the paper.
 
-We will then geographically visualize the different food type consumption in London and then analyse the link with the Mean Income by area. <strong> Pareil ici </strong>
+We will then geographically visualize the different food type consumption in London and then analyse the link with the Mean Income by area. With this we want to be able to see if given a shopping basket, we are able to predict the Income of the shopper. 
 
 # II - Children overweight prevalence
 
@@ -296,11 +296,12 @@ We found that the Linear regressor gave the best R-squared value, so we will con
 
 ![Residuals_Regression](./assets/img/residuals_regression.png){: .mx-auto.d-block :}
 
-As we can see, the probability of being off by more than 10000 pounds is quite low. This shows us that on top of being quite accurate, our regression is rarely off by more than 10000 pounds. Thus we can see that the select food categories allow us to get a quite good prediction of the income.  
+We find that the probability of predicing Income off by more than 10000 pounds is 0.11. This shows us that on top of being quite accurate, our regression is rarely off by more than 10000 pounds. Thus we can see that the selected food categories allow us to get a quite good prediction of the income.  
 
 ![Plot_Regression](./assets/img/Regression_Plot.png){: .mx-auto.d-block :}
 
-Finally 
+These results alongside with the correlation found above show us that we can predict, with a pretty good accuracy the mean income of an area based on the the fraction of food categories. 
+
 # Conclusion 
 
 # Notes 
