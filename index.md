@@ -181,15 +181,16 @@ In our case, even though we have statistically significant correlations between 
 We also learnt that our intuition about correlation might be wrong sometimes. We thought that obesity among children and grocery shopping was correlated, but it was not the case.
 
 # III - Geographical Visualization
-As presented in the previous post, we have at our disposal a huge dataset containing the food purchases made in the Tesco shops within the boundaries of London. Faced with all this data, we are a little lost and ask ourselves where to begin. And suddenly we remember that we learned, during our Padawan formation, how to become a data vizard. We take out our most beautiful tools and begin to make some visualizations to understand better our data.
-We have many features available for the purchases . We notice that the Tesco paper did not deeply explore the different **food categories**. Therefore, we decide to focus on these ones.
+As presented in the previous part, we have at our disposal a huge dataset containing the food purchases made in the Tesco shops within the boundaries of London. Faced with all this data, we are a little lost and ask ourselves where to begin. And suddenly we remember that we learned, during our Padawan formation, how to become a data vizard. We take out our most beautiful tools and begin to make some visualizations to understand better our data.
+We have many features available for purchases. We notice that the Tesco paper did not deeply explore the different **food categories**. Therefore, we decide to focus on these.
 
 ## What we want to visualize
-We wonder if the Tesco consumers buy the same products and in same quantity all over the city. In particular, we wonder :
-- Are there some food categories that are preferred in certain regions ? 
-- Are there some others that are equally bought in the city ? 
-- Can we draw a pattern from this visualization ?
-In order to try to answer all these questions, we make plots of the distribution of a certain food category all over London. We consider a mean of the fraction of purchase of each food category in a given ward.
+We wonder if the Tesco consumers buy the same products and in the same quantity all over the city. In particular, we wonder :
+- Are there some food categories that are preferred in certain regions? 
+- Are there some others that are equally bought in the city? 
+- Can we draw a pattern from this visualization?
+
+To try to answer all these questions, we make plots of the distribution of a certain food category all over London. We consider a mean of the fraction of purchase of each food category in a given ward.
 
 
 ## Visualizations 
