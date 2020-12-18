@@ -121,7 +121,60 @@ Intrigued by these observations, we will try to see now if there exist a correla
 
 # IV - Analysis of the link between Food category proportion and Income
 
-## 
+## Presentation of the dataset
 
+Our data comes from the [Household Income Estimates for Small Areas](https://data.london.gov.uk/dataset/household-income-estimates-small-areas) dataset. 
+This dataset presents Mean and median average gross annual household income for, Lower SOAs, Middle SOAs, Wards and Boroughs, London, 2001/02 to 2012/13
+
+We vizualize here the data presented in the dataset. 
+
+** INSERT FIGURE OF MEAN, MEDIAN and MEAN over all census ? **
+
+So first we are interested in seeing how the Mean and Median income evolves between the years. 
+
+As we can see on the graph above, there are some outliers but we can see that overall the Mean and Median outcome tend to go up ! 
+
+We decide to use the revenue for year 2012/13 as it is the closest data we have to 2015. Note that since we see a tendency to going growing, we can assume that an overall increasing trend is to be exected. 
+
+We could find a regressor to find an expected value for 2014/15 
+
+## Correlation between Fraction of each Category and Income 
+
+So here first we compute the correlations between the percentage of each food category and the mean income. Note that we obtain similar values with median(we display data below). We thus can conduct the same analysis on both dataframes and choose to do it on this one.  
+
+**INCLUDE CORRELATION IMAGES** ![Correlation_results_income](./assets/img/Correlations_cat_3_census.png){: .mx-auto.d-block :}
+
+First it's worth noting what these correlations mean. A positive correlation means that having a greater fraction of all the products belonging to a category relates to a higher Mean Income.
+So it does not mean that people with high revenues don't buy any product of a negatively correlated category or even that they buy less. It means that the fraction of their shopping bag item belonging to that category is smaller. 
+Taking the example of grains, this category being negatively correlated with income means that people with lower income overall have a bigger part of their alimentation composed of grains. 
+
+So let's analyse these results. 
+- The *negatives correlation* of Income with  **Sweets**, **Spirits**, **Soft Drinks**, **Fats Oils** and **Grains** is quite interesting because it shows that poorer neighbourhood show a higher part of the groceries dedicated to less healthy food. The correlation with spirits is also quite interesting as it might induce that poorer neighbourhood might be more prone to alcoholism or at least a higher consumption of stronger alcohol. 
+
+- The *positive correlation* of Income with **Fruit and Vegetables**, **Fish** and **Dairy** product is also quite interesting as we here find that 'healthier' products take a bigger part of the shopping bag in areas where the income is higher. Fruit and vegetables can also be explained as people with higher incomes might be more prone to be vegetarian. **Wine** is also one of those positively correlated food categories and we can explain that as wine being a 'fancy drink'. 
+
+- The fraction of **water** being negatively correlated with water seems quite surprising at first but we can actually make a point by finding that tap water in poorer neighbouhoods might be of lower quality forcing people there to buy more bottled water. People in richer neighbourhood might also be more likely to buy a water filtering system. It might also be that people might tend to buy big packs of water bottles in huge malls situated in industrial areas where the global Income might be lower and thus correlating it with lower Income.
+
+- Fraction of tea and coffee being negatively correlated with income is not very, so is the positive one with beer. 
+
+- We let aside the correlation that are not statistically significant or very low, namely eggs, poultry, red meat and ready-made food. Although for the latter, we can suppose that any worker is sensible to buying ready-made food for lunch thus it does not really correlates with the Income. 
+
+Important to qualify these remarks : 
+
+- The people buying food in a given area don't necessarily live in the area. 
+
+- It might be that some big shopping center are situated in industrial places outside the city, thus not much people live there so the mean income would be quite low even though all sorts of people go shopping there. 
+
+- We also can note that areas with really high median incomes might not be the most populated ones (finacial districts ... ) and might also not be the shopping place of a lot of people. Thus this most likely gives skewed data.
+
+We now address some of these questions by looking at the relationship between the population of an area and its Mean Income. 
 
 ## The Income strikes back 
+
+
+
+
+
+
+# Notes 
+- Preciser que on prend pas en compte l'inflation 
