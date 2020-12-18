@@ -71,20 +71,15 @@ Using the two highest-correlated factors and four control variables accounting f
 
 These result showed that the dataset make sense, as they found correlations which were expected between the average food product and related health diseases.
 
+For more details about the Paper and the Data itself, the reader is invited to refer directly to the paper. 
 
-## Appendices 
+With this introduction done, we now present our analysis of this paper. 
 
-### Food categories : 
+Namely we will first dig deeper in the analysis of the Children Obesity dataset already presented in the paper. 
 
-fruit & vegetables; grains (e.g., bread, rice, pasta); red meat (e.g., pork, beef); poultry; fish; dairy (e.g., milk, cheese);
-eggs; fats & oils (e.g., butter, olive oil); sweets (e.g., chocolate, candies); readymade items (e.g., pre-cooked meal);
-sauces (e.g., tomato sauce, soups); tea & coffee; soft drinks (e.g., carbonated sodas); bottled water; beer; wine; spirits.
+We will then geographically visualize the different food type consumption in London and then analyse the link with the Mean Income by area. 
 
-
-### Geographical areas stastistics
-
-_population, number of males, number of females, number residents aged [0–17], number
-residents aged [18–64], number residents aged 65+, average age, surface area, density of residents_
+# Obesity
 
 
 # Faustine on maps 
