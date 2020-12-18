@@ -227,13 +227,13 @@ We vizualize here the data presented in the dataset. In an optic to see how the 
 
 ![Mean, and median ](./assets/img/Mean_Median_WARD.png){: .mx-auto.d-block :}
 
-![Mean of mean](./assets/img/Mean_Of_Mean_WARD.png){: .mx-auto.d-block :}
 As we can see on the graph above, there are some outliers but we can see that overall the Mean and Median outcome tend to go up ! 
 
-We decide to use the revenue for year 2012/13 as it is the closest data we have to 2015. Note that since we see a tendency to going growing, we can assume that an overall increasing trend is to be exected. 
+![Mean of mean](./assets/img/Mean_Of_Mean_WARD.png){: .mx-auto.d-block :}
 
-** INSERT MAP OF Income in  LONDON **
-![Correlation_results_income](./assets/img/Correlations_cat_3_census.png){: .mx-auto.d-block :}
+When taking the mean of all areas we observe a similar constant augmentationwe assume that an overall increasing trend is exected and we decide to use the revenue for year 2012/13 as it is the closest data we have to 2015. Right below, we present an interactive map to visualize the income.
+
+{% include income.html %}
 
 ## Correlation between Fraction of each Category and Income 
 
@@ -298,6 +298,8 @@ We found that the Linear regressor gave the best R-squared value, so we will con
 As we can see, the probability of being off by more than 10000 pounds is quite low. This shows us that on top of being quite accurate, our regression is rarely off by more than 10000 pounds. Thus we can see that the select food categories allow us to get a quite good prediction of the income.  
 
 ![Plot_Regression](./assets/img/Regression_Plot.png){: .mx-auto.d-block :}
+
+Finally 
 # Conclusion 
 
 # Notes 
