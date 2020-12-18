@@ -126,23 +126,26 @@ Intrigued by these observations, we will try to see now if there exist a correla
 Our data comes from the [Household Income Estimates for Small Areas](https://data.london.gov.uk/dataset/household-income-estimates-small-areas) dataset. 
 This dataset presents Mean and median average gross annual household income for, Lower SOAs, Middle SOAs, Wards and Boroughs, London, 2001/02 to 2012/13
 
-We vizualize here the data presented in the dataset. 
+We vizualize here the data presented in the dataset. In an optic to see how the Mean and Median income evolves between the years. 
 
-** INSERT FIGURE OF MEAN, MEDIAN and MEAN over all census ? **
-
-So first we are interested in seeing how the Mean and Median income evolves between the years. 
+** INSERT FIGURE OF MEAN, MEDIAN **
+![Mean, and median ](./assets/img/Correlations_cat_3_census.png){: .mx-auto.d-block :}
 
 As we can see on the graph above, there are some outliers but we can see that overall the Mean and Median outcome tend to go up ! 
 
 We decide to use the revenue for year 2012/13 as it is the closest data we have to 2015. Note that since we see a tendency to going growing, we can assume that an overall increasing trend is to be exected. 
 
-We could find a regressor to find an expected value for 2014/15 
+** INSERT MAP OF Income in  LONDON **
+![Correlation_results_income](./assets/img/Correlations_cat_3_census.png){: .mx-auto.d-block :}
 
 ## Correlation between Fraction of each Category and Income 
 
-So here first we compute the correlations between the percentage of each food category and the mean income. Note that we obtain similar values with median(we display data below). We thus can conduct the same analysis on both dataframes and choose to do it on this one.  
+### Different categories 
 
-**INCLUDE CORRELATION IMAGES** ![Correlation_results_income](./assets/img/Correlations_cat_3_census.png){: .mx-auto.d-block :}
+So in this part we compute the correlations between the percentage of each food category and the mean income. Note that we obtain similar R values with median. We thus can conduct the same analysis on both dataframes and choose to do it on this one. 
+We present below the graph showing the correlations between Food category fraction and Mean Income, for all three censuses available. 
+
+![Correlation_results_income](./assets/img/Correlations_cat_3_census.png){: .mx-auto.d-block :}
 
 First it's worth noting what these correlations mean. A positive correlation means that having a greater fraction of all the products belonging to a category relates to a higher Mean Income.
 So it does not mean that people with high revenues don't buy any product of a negatively correlated category or even that they buy less. It means that the fraction of their shopping bag item belonging to that category is smaller. 
@@ -159,7 +162,20 @@ So let's analyse these results.
 
 - We let aside the correlation that are not statistically significant or very low, namely eggs, poultry, red meat and ready-made food. Although for the latter, we can suppose that any worker is sensible to buying ready-made food for lunch thus it does not really correlates with the Income. 
 
-Important to qualify these remarks : 
+### Different Nutrient analysis
+
+Even though this part was already quite developped in the original paper, we computed the same correlation as above using this time nutrients energy instead of food categories. Here are the results : 
+
+![Correlation_nutrients_results_income](./assets/img/Correlations_nutrients_msoa.png){: .mx-auto.d-block :}
+
+ According to the World Health Organization, the three best dietetary habits to prevent conditions associated with the metabolic syndrome are:
+ - limiting the intake of calories 
+ - having a nutrient-diverse diet
+ - favoring the consumption of fibers and proteins over sugars, carbohydrates, and fat.
+
+ The correlations we find with income shows that people that areas where people follow these recommandation food-wise tend to have higher Income, as they are directly correlated. 
+
+### Important to qualify these remarks : 
 
 - The people buying food in a given area don't necessarily live in the area. 
 
@@ -178,3 +194,4 @@ We now address some of these questions by looking at the relationship between th
 
 # Notes 
 - Preciser que on prend pas en compte l'inflation 
+- All precise data are available in the note book 
