@@ -128,9 +128,9 @@ This dataset presents Mean and median average gross annual household income for,
 
 We vizualize here the data presented in the dataset. In an optic to see how the Mean and Median income evolves between the years. 
 
-** INSERT FIGURE OF MEAN, MEDIAN **
-![Mean, and median ](./assets/img/Correlations_cat_3_census.png){: .mx-auto.d-block :}
+![Mean, and median ](./assets/img/Mean_Median_WARD.png){: .mx-auto.d-block :}
 
+![Mean of mean](./assets/img/Mean_Of_Mean_WARD.png){: .mx-auto.d-block :}
 As we can see on the graph above, there are some outliers but we can see that overall the Mean and Median outcome tend to go up ! 
 
 We decide to use the revenue for year 2012/13 as it is the closest data we have to 2015. Note that since we see a tendency to going growing, we can assume that an overall increasing trend is to be exected. 
@@ -183,11 +183,11 @@ Even though this part was already quite developped in the original paper, we com
 
 - We also can note that areas with really high median incomes might not be the most populated ones (finacial districts ... ) and might also not be the shopping place of a lot of people. Thus this most likely gives skewed data.
 
-We now address some of these questions by looking at the relationship between the population of an area and its Mean Income. 
 
 ## The Income strikes back 
 
-
+So we decided to run some regression techniques 
+![Residuals_Regression](./assets/img/residuals_regression.png){: .mx-auto.d-block :}
 # Conclusion 
 
 # Notes 
