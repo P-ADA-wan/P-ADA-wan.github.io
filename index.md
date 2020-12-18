@@ -203,17 +203,17 @@ On top of that, by moving your mouse all over the map you can discover the exact
 
 We can notice that the distributions of the proportion of purchases for each food category are pretty different. Some food categories show uniform distributions across the areas whereas some others show very disparate distributions. 
 
-However, there is one thing we have to note on this representation: if there is one area that has an exceptionnaly high proportion of a certain category, it will be hard to visualize the differences in the areas. For example, the fraction of soft drink tends to be between 2 and 5 % across the areas. However, there is one area that has a fraction of 12% of purchases of soft drinks: it shades all the other areas in the graph.
+However, there is one thing we have to note on this representation: if there is one area that has an exceptionally high proportion of a certain category, it will be hard to visualize the differences in the areas. For example, the fraction of soft drink tends to be between 2 and 5 % across the areas. However, there is one area that has a fraction of 12% of purchases of soft drinks: it shades all the other areas in the graph.
 
 For instance, the consumption of beer seems to be the same all over the city (less than 2%), except in some outliers areas. On contrary, the consumption of meat is 6 times higher in the northern, and centered wards of London compared to some southern wards. We observe almost the same thing for the poultry.
 
 ## Interpretations
 
-We will now try to interpret the different results. However, as we're not londonese, we don't know the stereotypes about London's areas, and we will definitely miss some interpretations.
+We will now try to interpret the different results. However, as we're not londoners, we don't know the stereotypes about London's areas, and we will miss some interpretations.
 
-The consumption of ready-made meal is higher in the suburbans areas. It might be because the residents of these areas have a longer commute time - thus, they have less time to cook and buy more ready-made meal.
+The consumption of ready-made meal is higher in the suburbans areas. It might be because the residents of these areas have a longer commute time - thus, they have less time to cook and buy more ready-made meals.
 
-The consumption of meat is higher in the northern and centered part of London. Meat is a pretty expensive product, and there might be a link between the mean income of an area and the meat consumption. We would not be surprise if we observe that wards with an higher meat consumption are wealthier.
+The consumption of meat is higher in the northern and central part of London. Meat is a pretty expensive product, and there might be a link between the mean income of an area and the meat consumption. We would not be surprised if we observe that wards with higher meat consumption are wealthier.
 
 ## A new hope 
 
