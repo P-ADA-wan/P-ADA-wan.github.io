@@ -39,7 +39,7 @@ Those areas have basic census statistics collected by the ONS in 2015. An exhaus
 
 The first group of variables expresses the Tesco **penetration** in an area. The representativeness, which is the ratio between the number of customers in an area and the population, is computed. A normalized representativeness is also computed.
 
-Then, the authors decided to compute the average product bought for each area. They computed multiple **nutrional properties** about this average product, such as the _weight_ or the _volume_, the _energy_, the _energy - density_, and the grams of each indivdual nutrients $nutrients_{i}$. Then, they compute the energy per nutrient, as well as the frequency of each nutrients, and the frequency of energey per nutrient. They managed to compute the entropy of these 2 frequencies. More details of the formulas in the [Appendices](#tesco-aggregation-formula).
+Then, the authors decided to compute the average product bought for each area. They computed multiple **nutrional properties** about this average product, such as the _weight_ or the _volume_, the _energy_, the _energy - density_, and the grams of each indivdual nutrients $nutrients_{i}$. Then, they compute the energy per nutrient, as well as the frequency of each nutrients, and the frequency of energey per nutrient. They managed to compute the entropy of these 2 frequencies.
 
 The last group of variables is about the **Product categories**. The authors computed the probability distribution of items belonging to the 17 different product categories being purchased in area a and the entropy of that distribution. They also computed the relative weight of products belonging to any category compared to the total weight, and its entropy.
 
@@ -88,11 +88,3 @@ sauces (e.g., tomato sauce, soups); tea & coffee; soft drinks (e.g., carbonated 
 
 _population, number of males, number of females, number residents aged [0–17], number
 residents aged [18–64], number residents aged 65+, average age, surface area, density of residents_
-
-### Tesco aggregation formula 
-
-**TODO : Either se chauffer à tout faire, either enlever cette partie**
-
-(1) $h_\theta(x) = \Large\frac{1}{1 + \mathcal{e}^{(-\theta^\top x)}}$
-(1) _representativeness(a)_ = _customers(a)_/_population(a)_
-(1) $_representativeness_^{norm}(a)$ = $_representativeness_(a) - min{representativeness} $
