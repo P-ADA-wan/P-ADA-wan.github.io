@@ -9,11 +9,7 @@ bokeh: true
 
 In this blog post, we'll give to the avid P-ADA-wan an overview of the paper [Tesco Grocery 1.0, a large-scale dataset of grocery purchases in London](https://www.nature.com/articles/s41597-020-0397-7). This paper was made by some experimented Jedi that used this dataset wisely. We tried to follow their path by extending the paper, as explained in the other blog posts.
 
-## Credits (add it to a subpage ? )
 
-As young Jedi, we would firstly like to thank the author of this paper, [Lucas Maria Aiello](https://www.nature.com/search?author="Luca Maria+Aiello"), [Daniele Quercia](https://www.nature.com/search?author=%22Daniele+Quercia%22), [Rossano Schifanella](https://www.nature.com/search?author=%22Rossano+Schifanella%22) and [Lucia Del Prete](https://www.nature.com/search?author=%22Lucia+Del%20Prete%22) for their work on this paper. 
-
-We would also like to thank the [Data Science Lab](https://dlab.epfl.ch/) of [EPFL](www.epfl.ch), as this project is part of the [Fall 2020 Applied Data Analysis course](https://dlab.epfl.ch/teaching/fall2020/cs401/).
 
 # Introduction to the Tesco paper 
 
