@@ -14,7 +14,8 @@ author: Damien Gengler, Vincent Yuan & Faustine Vigneau
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Credits: "aboutme"
+  About us: "aboutus"
+  Credits: "credits"
   Resources:
     - Tesco Paper: "https://www.nature.com/articles/s41597-020-0397-7"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
