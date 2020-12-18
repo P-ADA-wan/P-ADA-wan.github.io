@@ -73,11 +73,11 @@ These result showed that the dataset make sense, as they found correlations whic
 
 For more details about the Paper and the Data itself, the reader is invited to refer directly to the paper. 
 
-With this introduction done, we now present our analysis of this paper. 
 
-Namely we will first dig deeper in the analysis of the Children Obesity dataset already presented in the paper. 
+Now that we summarized the paper, we can present the goal of our extension and analysis. 
+Our first goal is to dig deeper in the analysis of the Children Obesity dataset already presented in the paper. <strong> Ajouter du BS sur pq on fait ça </strong>
 
-We will then geographically visualize the different food type consumption in London and then analyse the link with the Mean Income by area. 
+We will then geographically visualize the different food type consumption in London and then analyse the link with the Mean Income by area. <strong> Pareil ici </strong>
 
 # Obesity
 
