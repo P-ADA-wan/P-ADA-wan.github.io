@@ -1,5 +1,5 @@
 
-![Us](./assets/img/high-republic-p-ada-wan.jpg){: .mx-auto.d-block :}
+![Us](./assets/img/high-republic-p-ada-wans.jpg){: .mx-auto.d-block :}
 
 We're 3 padawans, [Faustine Vigneau](https://people.epfl.ch/faustine.vigneau), [Damien Gengler](https://people.epfl.ch/damien.gengler) and [Vincent Yuan](https://people.epfl.ch/vincent.yuan) trying to decipher the power of Data Analysis at EPFL.
 
