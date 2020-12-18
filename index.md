@@ -185,11 +185,10 @@ In our case, even though we have statistically significant correlations between 
 
 We also learnt that our intuition about correlation might be wrong sometimes. We thought that obesity among children and grocery shopping was correlated, but it was not the case.
 
-<<<<<<< HEAD
+
 As we saw that food categories are more impactful than we thought, and that the paper haven't used at all the food categories, we decided to explore this part of the dataset more in depth. We will continue by visualizing the proportion of purchases for each category across London's areas.
-=======
+
 - - -
->>>>>>> 3d2dffa5e3157664bb822340e524d4be13ea60bb
 
 # III - Geographical Visualization
 
@@ -226,23 +225,16 @@ We will now try to interpret the different results. However, as we're not london
 
 The consumption of ready-made meal is higher in the suburbans areas. It might be because the residents of these areas have a longer commute time - thus, they have less time to cook and buy more ready-made meals.
 
-<<<<<<< HEAD
-The consumption of meat is higher in the northern and centered part of London. Meat is a pretty expensive product, and there might be a link between the mean income of an area and the meat consumption. We would not be surprised if we observe that wards with an higher meat consumption are wealthier.
-=======
+
 The consumption of meat is higher in the northern and central part of London. Meat is a pretty expensive product, and there might be a link between the mean income of an area and the meat consumption. We would not be surprised if we observe that wards with higher meat consumption are wealthier.
->>>>>>> 3d2dffa5e3157664bb822340e524d4be13ea60bb
 
 ## A new hope 
 
 Intrigued by these observations, we will try to see now if there exist a correlation between the income of people and the proportion of purchases of some food category in the Tesco shops.
 
-<<<<<<< HEAD
-# IV - Analysis of the link between food category proportion and income
-=======
 - - -
 
 # IV - Analysis of the link between Food category proportion and Income
->>>>>>> 3d2dffa5e3157664bb822340e524d4be13ea60bb
 
 We have found a dataset representing the average income for the different areas. We will link this dataset to our previous work on food categories, and discover if there's a correlation or not between food categories and income.
 
