@@ -1,0 +1,20 @@
+---
+layout: post
+title: Tesco Grocery 1.0 paper
+subtitle: A brief overview of the Tesco Grocery 1.0 paper
+cover-img: /assets/img/children-obese.jpeg
+comments: true
+---
+
+In this part of the extension, we wanted to explore more in depth the [Tesco Grocery dataset](https://www.nature.com/articles/s41597-020-0397-7), and especially the link 
+between food and children obesity or overweight.
+
+# Choice of our predictors and target
+
+After joining the grocery dataset with the children obesity one on the area_id, we obtained a DataFrame with 202 potential predictors and 7 labels for only 544 datapoints.
+
+We had to select the correct predictors and the correct target. Indeed, our model will surely overfit with 202 predictors for a sample of size 544.
+
+As the dataset is based on London, we decided to follow the guidelines of the [National Health Service](https://www.nhs.uk/conditions/obesity/causes/) to select our predictors. 
+We can note that there are four points that we can extract from the dataset that causes obesity: calories, fat, sugar and alcohol. 
+As children of 6 years old are not likely to drink alcohol, we will focus on the 3 columns _fat_, _sugar_ and _energy_tot_
