@@ -188,9 +188,7 @@ We now address some of these questions by looking at the relationship between th
 ## The Income strikes back 
 
 
-
-
-
+# Conclusion 
 
 # Notes 
 - Preciser que on prend pas en compte l'inflation 
