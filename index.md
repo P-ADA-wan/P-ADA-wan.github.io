@@ -188,6 +188,8 @@ Even though this part was already quite developped in the original paper, we com
 
 So we decided to run some regression techniques 
 ![Residuals_Regression](./assets/img/residuals_regression.png){: .mx-auto.d-block :}
+
+![Plot_Regression](./assets/img/Regression_Plot.png){: .mx-auto.d-block :}
 # Conclusion 
 
 # Notes 
