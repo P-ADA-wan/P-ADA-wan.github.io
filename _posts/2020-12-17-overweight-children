@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tesco Grocery 1.0 paper
-subtitle: A brief overview of the Tesco Grocery 1.0 paper
+title: A correlation between overweight children and food ?
+subtitle: Our researches to link overweight children prevalence and food consumption
 cover-img: /assets/img/children-obese.jpeg
 comments: true
 ---
@@ -9,12 +9,32 @@ comments: true
 In this part of the extension, we wanted to explore more in depth the [Tesco Grocery dataset](https://www.nature.com/articles/s41597-020-0397-7), and especially the link 
 between food and children obesity or overweight.
 
+We wanted to explore deeper and make stronger correlation between children overweight prevalence and food consumption. Indeed, our first thought about this question
+was that obesity among the children and grocery shopping was strongly correlated.
+
+# Introduction and expectations
+
+We decided to explore this part of the paper as we thought that the paper didn't go in depth into it. Indeed, the paper focused on how the authors aggregated the data
+rather than on establishing strong links between children obesity and grocery shopping. The authors computed the Spearman correlation between obese and overweight 
+children at reception (4-5 y.o) and at 6 y.o, and food consumption estimators (energy, nutrients, entropy of nutrients). 
+
+Our goal was thus to find correct predictors to produce a machine learning model that would be able to estimate overweight prevalence, given the informations of an area.
+As we had multiple machine learning models at our disposal and more than 200 potential predictors, we thought that we could find a machine learning model that 
+would predict correctly the values.
+
 # Choice of our predictors and target
 
 After joining the grocery dataset with the children obesity one on the area_id, we obtained a DataFrame with 202 potential predictors and 7 labels for only 544 datapoints.
 
-We had to select the correct predictors and the correct target. Indeed, our model will surely overfit with 202 predictors for a sample of size 544.
+We had to select the correct predictors and the correct target. Indeed, our model will surely overfit with 202 predictors for a sample of size 544, and we have to focus 
+on one target value.
 
-As the dataset is based on London, we decided to follow the guidelines of the [National Health Service](https://www.nhs.uk/conditions/obesity/causes/) to select our predictors. 
+The data for the overweight children is more sparse than the one for the obese children. 
+Indeed, obese children are included in the overweight children, so the overweight prevalence for children will always be greater than the obesity prevalence in the same area.
+That's why we chose to use overweight children as our predictor. We now had to choose between reception (4-5 y.o. children) and 6 y.o. children.
+We chose to select 6 y.o. children data, as they have had more time to eat and to have weight changes because of their food consumption.
+
+As the dataset is based on London, we decided to follow the guidelines of the [National Health Service](https://www.nhs.uk/conditions/obesity/causes/)
+to select our predictors. 
 We can note that there are four points that we can extract from the dataset that causes obesity: calories, fat, sugar and alcohol. 
-As children of 6 years old are not likely to drink alcohol, we will focus on the 3 columns _fat_, _sugar_ and _energy_tot_
+As children of 6 years old are not likely to drink alcohol, we will focus on the 3 columns _fat_, _sugar_ and _energy_tot_All
