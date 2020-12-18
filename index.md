@@ -8,7 +8,7 @@ bokeh: true
 ---
 
 
-Food consumption is a very central part of the human lifes, by analysing food habits we can deduce a large pannel of health conditions and human behaviours. The Tesco Paper analysis focused on describing their methodology and results about Obesity and Diabetes prevalence. Throughout this data story we will explore different aspects of the dataset by looking at the Obesity problem using the food categories first. We will then visualize the geographic repartition of food categories. Finally we will analyse the link between the food consumption and the Income per Area. 
+Food consumption is a very central part of human lives, by analyzing food habits we can deduce a large panel of health conditions and human behaviors. The Tesco Paper analysis focused on describing their methodology and results about Obesity and Diabetes prevalence. Throughout this data story, we will explore different aspects of the dataset by looking at the Obesity problem using the food categories first. We will then visualize the geographic repartition of food categories. Finally, we will analyze the link between food consumption and the Income per Area.
 
 - - -
 
