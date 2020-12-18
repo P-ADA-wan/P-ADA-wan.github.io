@@ -304,6 +304,19 @@ These results alongside with the correlation found above show us that we can pre
 
 # Conclusion 
 
+We now summarize the findings of our extension work. 
+
+- In the first part we used machine learning techniques to find the link between food consumption and children obesity following NHS guidelines but it did not give much results. When working with food categories we got better results. We didn't want to over interpret data as the results did not make much sense. Indeed, we were afraid to dig too much into what appeared to be a spurious correlation.   
+
+- Next we explored our data from a geographical point of view using Chloropleths-map visualizations. We could observe that the distribution of food proportion was varying drastically for each food category and was often quite sparse. This left us wondering what could cause this sparsity.
+
+- In the last part we looked at Mean Income over the city and found relatively flagrant correlations. Running Machine Learning techniques on our data allowed us to dig deeper into these link and train a linear regression model that allow us to predict pretty accurately the mean income. 
+
+Overall we are quite happy with the results we find while researching our extension. We also managed to use several concepts of the course and improve our data analysis knowledge. While our analysis covered several subjects, we only explored only a small part of what was doable with the Tesco Dataset and there is still a lot of valueable information to extract from it.
+
+
+
 # Notes 
-- Preciser que on prend pas en compte l'inflation 
-- All precise data are available in the note book 
+All precise data are available in our notebook available in the [P-ADA-WAN GitHub](https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_p-ada-wan).
+
+May the Data Force be with you ! 

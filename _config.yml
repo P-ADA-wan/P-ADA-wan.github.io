@@ -20,7 +20,9 @@ navbar-links:
     - Tesco Paper: "https://www.nature.com/articles/s41597-020-0397-7"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     
-  Our Git Repository: "https://github.com/P-ADA-wan/P-ADA-wan.github.io"
+  Github: 
+    - Reasearch Notebook : "https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_p-ada-wan"
+    - Jekyll implementation : "https://github.com/P-ADA-wan/P-ADA-wan.github.io"
 
 # --- Logo --- #
 
