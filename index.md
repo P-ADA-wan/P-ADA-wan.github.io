@@ -194,7 +194,7 @@ To try to answer all these questions, we make plots of the distribution of a cer
 
 
 ## Visualizations 
-Each plot below represents the mean proportion of purchase of a certain food category per ward. To see all the plots, you can click on this [link](maps.html).
+Each plot below represents the mean proportion of purchase of a certain food category per ward. To see all the plots, you can click on this [link](posts/2020-02-26-flake-it-till-you-make-it.md).
 On top of that, by moving your mouse all over the map you can discover the exact mean proportion of purchase of a certain food category, the mean income and the median income in each ward.
 
 {% include test.html %}
