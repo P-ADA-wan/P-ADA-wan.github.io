@@ -142,17 +142,18 @@ We could find a regressor to find an expected value for 2014/15
 
 So here first we compute the correlations between the percentage of each food category and the mean income. Note that we obtain similar values with median(we display data below). We thus can conduct the same analysis on both dataframes and choose to do it on this one.  
 
+**INCLUDE CORRELATION IMAGES** ![Correlation_results_income](./assets/img/Correlations_cat_3_census.png){: .mx-auto.d-block :}
 
 First it's worth noting what these correlations mean. A positive correlation means that having a greater fraction of all the products belonging to a category relates to a higher Mean Income.
 So it does not mean that people with high revenues don't buy any product of a negatively correlated category or even that they buy less. It means that the fraction of their shopping bag item belonging to that category is smaller. 
 Taking the example of grains, this category being negatively correlated with income means that people with lower income overall have a bigger part of their alimentation composed of grains. 
 
 So let's analyse these results. 
-- The negatives correlation of Income with  Sweets, Spirits, Soft Drinks, Fats Oils and Grains is quite interesting because it shows that poorer neighbourhood show a higher part of the groceries dedicated to less healthy food. The correlation with spirits is also quite interesting as it might induce that poorer neighbourhood might be more prone to alcoholism or at least a higher consumption of stronger alcohol. 
+- The *negatives correlation* of Income with  **Sweets**, **Spirits**, **Soft Drinks**, **Fats Oils** and **Grains** is quite interesting because it shows that poorer neighbourhood show a higher part of the groceries dedicated to less healthy food. The correlation with spirits is also quite interesting as it might induce that poorer neighbourhood might be more prone to alcoholism or at least a higher consumption of stronger alcohol. 
 
-- The positive correlation of Income with Fruit and Vegetables, Fish and Dairy product is also quite interesting as we here find that 'healthier' products take a bigger part of the shopping bag in areas where the income is higher. Fruit and vegetables can also be explained as people with higher incomes might be more prone to be vegetarian. Wine is also one of those positively correlated food categories and we can explain that as wine being a 'fancy drink'. 
+- The *positive correlation* of Income with **Fruit and Vegetables**, **Fish** and **Dairy** product is also quite interesting as we here find that 'healthier' products take a bigger part of the shopping bag in areas where the income is higher. Fruit and vegetables can also be explained as people with higher incomes might be more prone to be vegetarian. **Wine** is also one of those positively correlated food categories and we can explain that as wine being a 'fancy drink'. 
 
-- The fraction of water being negatively correlated with water seems quite surprising at first but we can actually make a point by finding that tap water in poorer neighbouhoods might be of lower quality forcing people there to buy more bottled water. People in richer neighbourhood might also be more likely to buy a water filtering system. It might also be that people might tend to buy big packs of water bottles in huge malls situated in industrial areas where the global Income might be lower and thus correlating it with lower Income.
+- The fraction of **water** being negatively correlated with water seems quite surprising at first but we can actually make a point by finding that tap water in poorer neighbouhoods might be of lower quality forcing people there to buy more bottled water. People in richer neighbourhood might also be more likely to buy a water filtering system. It might also be that people might tend to buy big packs of water bottles in huge malls situated in industrial areas where the global Income might be lower and thus correlating it with lower Income.
 
 - Fraction of tea and coffee being negatively correlated with income is not very, so is the positive one with beer. 
 
