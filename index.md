@@ -11,7 +11,7 @@ In this blog post, we'll give to the avid P-ADA-wan an overview of the paper [Te
 
 
 
-# Introduction to the Tesco paper 
+# I - Introduction to the Tesco paper 
 
 The Tesco Grocery 1.0 dataset is a record of over 420 M food items, purchased by 1.6M fidelity card owners across Greater London. The authors aggregated the data at different levels, using the same geographical delimitations as the [Office for National statistics](https://www.ons.gov.uk/), dividing into different granularities: LSOA (Lower Super Output Area), MSOA (Medium Super Output Area), Ward,
 and borough. They computed the average food product for each areas, and linked it to health outcomes strongly linked to food consumption dataset. Then, they established a correlation between the food consumed and the prevalence of health diseases in an area.
@@ -79,10 +79,11 @@ Our first goal is to dig deeper in the analysis of the Children Obesity dataset 
 
 We will then geographically visualize the different food type consumption in London and then analyse the link with the Mean Income by area. <strong> Pareil ici </strong>
 
-# Obesity
+# II - Obesity
 
+Jabba the hutt basically ! 
 
-# Faustine on maps 
+# III - Geographical Visualization
 As presented in the previous post, we have at our disposal a huge dataset containing the food purchases made in the Tesco shops within the boundaries of London. Faced with all this data, we are a little lost and ask ourselves where to begin. And suddenly we remember that we learned, during our Padawan formation, how to become a data vizard. We take out our most beautiful tools and begin to make some visualizations to understand better our data.
 We have many features available for the purchases . We notice that the Tesco paper did not deeply explore the different **food categories**. Therefore, we decide to focus on these ones.
 
@@ -116,4 +117,11 @@ Meat is a pretty expensive product and we wonder if there can be a link between 
 In addition, it is possible that the observation about the important readymade comsuption in some wards is also linked with the income of the people. Middle-class people generally have healthier diets than lower-class people and would then consume less readymade products.
 
 ## A new hope 
-Intrigued by these observations, we will try to see in another post if there exist a correlation between the income of people and the proportion of purchases of some food category in the Tesco shops.
+Intrigued by these observations, we will try to see now if there exist a correlation between the income of people and the proportion of purchases of some food category in the Tesco shops.
+
+# IV - Analysis of the link between Food category proportion and Income
+
+## 
+
+
+## The Income strikes back 
