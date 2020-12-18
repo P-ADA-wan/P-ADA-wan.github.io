@@ -186,8 +186,19 @@ Even though this part was already quite developped in the original paper, we com
 
 ## The Income strikes back 
 
-So we decided to run some regression techniques 
+So we decided to run some regression techniques to see if we can predict the Income of the Area based on the fraction of consumed food categories. 
+We'll study the case for MSOA as it is the middle sized and we can witness the same phenomena for the three areas ! 
+
+We will use this samples for training as they are the one we found having a statistically significant correlation with Mean Income.
+**f_beer, f_dairy, f_fats_oils, f_fish, f_fruit_veg, f_grains, f_meat_red, f_soft_drinks, f_spirits, f_sweets, f_tea_coffee, f_water and f_wine**.
+
+
+We tried the same Machine Learning Regressors to predict Mean Income and see how well it performs. We kept 70% of our data for training. 
+We found that the Linear regressor gave the best R-squared value, so we will continue our analysis with this method. This R-squared value being high indicates that these features allow a good prediction of the Mean Income. 
+
 ![Residuals_Regression](./assets/img/residuals_regression.png){: .mx-auto.d-block :}
+
+As we can see, the probability of being off by more than 10000 pounds is quite low. This shows us that on top of being quite accurate, our regression is rarely off by more than 10000 pounds. Thus we can see that the select food categories allow us to get a quite good prediction of the income.  
 
 ![Plot_Regression](./assets/img/Regression_Plot.png){: .mx-auto.d-block :}
 # Conclusion 
