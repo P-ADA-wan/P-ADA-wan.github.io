@@ -1,3 +1,8 @@
+---
+layout: page
+title: About Us
+subtitle: Three young padawans on a Data Science intergalactic quest. 
+---
 
 ![Us](./assets/img/high-republic-p-ada-wans.jpg){: .mx-auto.d-block :}
 

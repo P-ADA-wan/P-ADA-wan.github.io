@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Credits
-subtitle: The Master Jedi allowed us to go on with our mission.
+subtitle: The Master Jedi that allowed us to go on with our mission.
 ---
 
 As young Jedis, we would firstly like to thank the author of this paper, [Lucas Maria Aiello](https://www.nature.com/search?author="Luca Maria+Aiello"), [Daniele Quercia](https://www.nature.com/search?author=%22Daniele+Quercia%22), [Rossano Schifanella](https://www.nature.com/search?author=%22Rossano+Schifanella%22) and [Lucia Del Prete](https://www.nature.com/search?author=%22Lucia+Del%20Prete%22) for their work on this paper. 
