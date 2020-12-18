@@ -180,8 +180,12 @@ In our case, even though we have statistically significant correlations between 
 
 We also learnt that our intuition about correlation might be wrong sometimes. We thought that obesity among children and grocery shopping was correlated, but it was not the case.
 
+As we saw that food categories are more impactful than we thought, and that the paper haven't used at all the food categories, we decided to explore this part of the dataset more in depth. We will continue by visualizing the proportion of purchases for each category across London's areas.
+
 # III - Geographical Visualization
-As presented in the previous part, we have at our disposal a huge dataset containing the food purchases made in the Tesco shops within the boundaries of London. Faced with all this data, we are a little lost and ask ourselves where to begin. And suddenly we remember that we learned, during our Padawan formation, how to become a data vizard. We take out our most beautiful tools and begin to make some visualizations to understand better our data.
+
+As presented in the previous parts, we have at our disposal a huge dataset containing the food purchases made in the Tesco shops within the boundaries of London. Faced with all this data, we are a little lost and ask ourselves where to begin. And suddenly we remember that we learned, during our Padawan formation, how to become a data wizard. We take out our most beautiful tools and begin to make some visualizations to understand better our data.
+
 We have many features available for purchases. We notice that the Tesco paper did not deeply explore the different **food categories**. Therefore, we decide to focus on these.
 
 ## What we want to visualize
@@ -213,98 +217,97 @@ We will now try to interpret the different results. However, as we're not london
 
 The consumption of ready-made meal is higher in the suburbans areas. It might be because the residents of these areas have a longer commute time - thus, they have less time to cook and buy more ready-made meal.
 
-The consumption of meat is higher in the northern and centered part of London. Meat is a pretty expensive product, and there might be a link between the mean income of an area and the meat consumption. We would not be surprise if we observe that wards with an higher meat consumption are wealthier.
+The consumption of meat is higher in the northern and centered part of London. Meat is a pretty expensive product, and there might be a link between the mean income of an area and the meat consumption. We would not be surprised if we observe that wards with an higher meat consumption are wealthier.
 
 ## A new hope 
 
 Intrigued by these observations, we will try to see now if there exist a correlation between the income of people and the proportion of purchases of some food category in the Tesco shops.
 
-# IV - Analysis of the link between Food category proportion and Income
+# IV - Analysis of the link between food category proportion and income
 
-We have found a dataset representing the average income for the different areas. We will explore 
+We have found a dataset representing the average income for the different areas. We will link this dataset to our previous work on food categories, and discover if there's a correlation or not between food categories and income.
 
 ## Presentation of the dataset
 
 Our data comes from the [Household Income Estimates for Small Areas](https://data.london.gov.uk/dataset/household-income-estimates-small-areas) dataset. 
-This dataset presents Mean and median average gross annual household income for, Lower SOAs, Middle SOAs, Wards and Boroughs, London, 2001/02 to 2012/13
+This dataset presents the mean and median gross annual household income for, Lower SOAs, Middle SOAs, Wards and Boroughs, London, 2001/02 to 2012/13
 
-We vizualize here the data presented in the dataset. In an optic to see how the Mean and Median income evolves between the years. 
+We firstly want to visualize the data, in an optic to see how the mean and median income evolves between the years. 
 
 ![Mean, and median ](./assets/img/Mean_Median_WARD.png){: .mx-auto.d-block :}
 
-As we can see on the graph above, there are some outliers but we can see that overall the Mean and Median outcome tend to go up ! 
+As we can see on the graph above, we can note that even though the mean and median income differs between areas, they all increases over the year. Let's aggregate the evolution of the mean of all mean Income.
 
 ![Mean of mean](./assets/img/Mean_Of_Mean_WARD.png){: .mx-auto.d-block :}
 
-When taking the mean of all areas we observe a similar constant augmentationwe assume that an overall increasing trend is exected and we decide to use the revenue for year 2012/13 as it is the closest data we have to 2015. Right below, we present an interactive map to visualize the income.
+When taking the mean of all areas we observe a similar constant augmentation. Now that we know that there's an inflation, we decide to use the revenue for year 2012/13 as it is the closest data we have to 2015.
+
+We will now present an interactive map to visualize the income. However, you can note that we lack data for some areas.
 
 {% include income.html %}
 
-## Correlation between Fraction of each Category and Income 
+## Correlation studies
 
 ### Different categories 
 
-So in this part we compute the correlations between the percentage of each food category and the mean income. Note that we obtain similar R values with median. We thus can conduct the same analysis on both dataframes and choose to do it on this one. 
-We present below the graph showing the correlations between Food category fraction and Mean Income, for all three censuses available. 
+In this part we compute the correlations between the percentage of purchase for each food category and the mean income. We performed the same analysis with the median instead of the mean, and found similar Spearman's correlation values. We thus can conduct the same analysis on both parameters, and we decided to stick with the mean as well as the Spearman's correlation for this section.
+
+We will now present the graph showing the correlations between Food category fraction and Mean Income, for all three area-levels available. 
 
 ![Correlation_results_income](./assets/img/Correlations_cat_3_census.png){: .mx-auto.d-block :}
 
-First it's worth noting what these correlations mean. A positive correlation means that having a greater fraction of all the products belonging to a category relates to a higher Mean Income.
-So it does not mean that people with high revenues don't buy any product of a negatively correlated category or even that they buy less. It means that the fraction of their shopping bag item belonging to that category is smaller. 
+We will first explain the meaning of these correlations. A positive correlation for a category means that areas with a greater proportion of purchase of this category tend to have a higher mean income. However, it does not mean that people with high revenues don't buy any product of a negatively correlated category: it means that the fraction of their shopping bag item belonging to that category is smaller. 
+
 Taking the example of grains, this category being negatively correlated with income means that people with lower income overall have a bigger part of their alimentation composed of grains. 
 
 So let's analyse these results. 
-- The *negatives correlation* of Income with  **Sweets**, **Spirits**, **Soft Drinks**, **Fats Oils** and **Grains** is quite interesting because it shows that poorer neighbourhood show a higher part of the groceries dedicated to less healthy food. The correlation with spirits is also quite interesting as it might induce that poorer neighbourhood might be more prone to alcoholism or at least a higher consumption of stronger alcohol. 
+- The *negative correlation* of income with  **sweets**, **spirits**, **soft drinks**, **fats oils** and **grains** is quite interesting. It shows that poorer neighbourhoods have a higher part of the groceries dedicated to unhealthy food. The correlation with spirits is also meaningful as it might induce that poorer neighbourhood may be more prone to alcoholism or at least a higher consumption of stronger alcohol. 
 
-- The *positive correlation* of Income with **Fruit and Vegetables**, **Fish** and **Dairy** product is also quite interesting as we here find that 'healthier' products take a bigger part of the shopping bag in areas where the income is higher. Fruit and vegetables can also be explained as people with higher incomes might be more prone to be vegetarian. **Wine** is also one of those positively correlated food categories and we can explain that as wine being a 'fancy drink'. 
+- The *positive correlation* of income with **fruit and vegetables**, **fish** and **dairy** products is also interesting. We find that products we consider as heathy take a bigger part of the shopping bag in areas where the income is higher. This higher proportion of fruit and vegetables can also be explained as people with higher incomes might be more likely to be vegetarian. **Wine** is also one of those positively correlated food categories and we can explain this result, as wine being a 'fancy drink'. 
 
-- The fraction of **water** being negatively correlated with water seems quite surprising at first but we can actually make a point by finding that tap water in poorer neighbouhoods might be of lower quality forcing people there to buy more bottled water. People in richer neighbourhood might also be more likely to buy a water filtering system. It might also be that people might tend to buy big packs of water bottles in huge malls situated in industrial areas where the global Income might be lower and thus correlating it with lower Income.
+- The fraction of **water** being negatively correlated with water seems quite surprising at first but we can actually make a point by finding that tap water in poorer neighbouhoods might be of lower quality, forcing people there to buy more bottled water. People in richer neighbourhood may also be more likely to buy a water filtering system. 
 
-- Fraction of tea and coffee being negatively correlated with income is not very, so is the positive one with beer. 
+- The fraction of tea and coffee being negatively correlated with income is not very meaningful, as well as the positive correlation with beer.
 
-- We let aside the correlation that are not statistically significant or very low, namely eggs, poultry, red meat and ready-made food. Although for the latter, we can suppose that any worker is sensible to buying ready-made food for lunch thus it does not really correlates with the Income. 
+- We let aside the correlation that are not statistically significant or very low, namely eggs, poultry, red meat and ready-made food. Although for the latter, we can suppose that any worker is sensible to buying ready-made food for lunch thus it does not really correlates with the income. 
 
-### Different Nutrient analysis
+### Different nutrients
 
-Even though this part was already quite developped in the original paper, we computed the same correlation as above using this time nutrients energy instead of food categories. Here are the results : 
+Even though this part was already quite developped in the original paper, we computed the correlation between mean income and nutrients. Here are the results : 
 
 ![Correlation_nutrients_results_income](./assets/img/Correlations_nutrients_msoa.png){: .mx-auto.d-block :}
 
- According to the World Health Organization, the three best dietetary habits to prevent conditions associated with the metabolic syndrome are:
+ According to the World Health Organization, the three best dietetary habits to prevent heart-related conditions, strokes and diabetes are:
  - limiting the intake of calories 
  - having a nutrient-diverse diet
- - favoring the consumption of fibers and proteins over sugars, carbohydrates, and fat.
+ - favorising the consumption of fibers and proteins over sugars, carbohydrates, and fat.
 
- The correlations we find with income shows that people that areas where people follow these recommandation food-wise tend to have higher Income, as they are directly correlated. 
-
-### Important to qualify these remarks : 
-
-- The people buying food in a given area don't necessarily live in the area. 
-
-- It might be that some big shopping center are situated in industrial places outside the city, thus not much people live there so the mean income would be quite low even though all sorts of people go shopping there. 
-
-- We also can note that areas with really high median incomes might not be the most populated ones (finacial districts ... ) and might also not be the shopping place of a lot of people. Thus this most likely gives skewed data.
+ The correlations we find with income shows that people that areas where people follow these food recommandations tend to have higher income.
 
 
-## The Income strikes back 
+## The income strikes back 
 
-So we decided to run some regression techniques to see if we can predict the Income of the Area based on the fraction of consumed food categories. 
-We'll study the case for MSOA as it is the middle sized and we can witness the same phenomena for the three areas ! 
+We decided to run some regression techniques to see if we can predict area's income based on the fraction of consumed food categories. 
+We will show the case for MSOA as it is the middle sized and we have witnessed the same phenomena in the 3 area levels in our study. 
 
-We will use this samples for training as they are the one we found having a statistically significant correlation with Mean Income.
+We will use these predictors for training as they are the one we found having a statistically significant correlation with Mean Income.
 **f_beer, f_dairy, f_fats_oils, f_fish, f_fruit_veg, f_grains, f_meat_red, f_soft_drinks, f_spirits, f_sweets, f_tea_coffee, f_water and f_wine**.
 
 
-We tried the same Machine Learning Regressors to predict Mean Income and see how well it performs. We kept 70% of our data for training. 
-We found that the Linear regressor gave the best R-squared value, so we will continue our analysis with this method. This R-squared value being high indicates that these features allow a good prediction of the Mean Income. 
+We tried the same machine learning models to predict mean income than the one we used when finding children overweight. We kept 70% of our data for training, and checked how well it performs.
+We found that the linear regression gave the best R-squared value, so we will continue our analysis with this method. This R-squared value being high indicates that these features predict well the mean income. 
+
+We decided to plot the residuals to see how well our model was behaving.
 
 ![Residuals_Regression](./assets/img/residuals_regression.png){: .mx-auto.d-block :}
 
-We find that the probability of predicing Income off by more than 10000 pounds is 0.11. This shows us that on top of being quite accurate, our regression is rarely off by more than 10000 pounds. Thus we can see that the selected food categories allow us to get a quite good prediction of the income.  
+We find that the probability of predicting the income off by more than 10000 pounds is 0.11. This shows us that on top of being quite accurate, our regression is rarely off by more than 10000 pounds. Thus we can see that the selected food categories allow us to get a quite good prediction of the income.
+
+To have a more visual interpretation of this regression, we plotted the predicted mean income to the actual ones.
 
 ![Plot_Regression](./assets/img/Regression_Plot.png){: .mx-auto.d-block :}
 
-These results alongside with the correlation found above show us that we can predict, with a pretty good accuracy the mean income of an area based on the the fraction of food categories. 
+These results alongside with the correlation found above show us that we can predict, with a pretty good accuracy, the mean income of an area based on the fraction of food categories. 
 
 # Conclusion 
 
