@@ -330,9 +330,9 @@ We now summarize the findings of our extension work.
 
 - Next we explored our data from a geographical point of view using Chloropleths-map visualizations. We could observe that the distribution of food proportion was varying drastically for each food category and was often quite sparse. This left us wondering what could cause this sparsity.
 
-- In the last part we looked at Mean Income over the city and found relatively flagrant correlations. Running Machine Learning techniques on our data allowed us to dig deeper into these link and train a linear regression model that allow us to predict pretty accurately the mean income. 
+- In the last part we looked at Mean Income over the city and found relatively flagrant correlations. Running Machine Learning techniques on our data allowed us to dig deeper into these links and train a linear regression model that allowed us to predict pretty accurately the mean income. 
 
-Overall we are quite happy with the results we find while researching our extension. We also managed to use several concepts of the course and improve our data analysis knowledge. While our analysis covered several subjects, we only explored only a small part of what was doable with the Tesco Dataset and there is still a lot of valueable information to extract from it.
+Overall we are quite happy with the results we found while researching our extension. We also managed to use several concepts of the course and improve our data analysis knowledge. While our analysis covered several subjects, we only explored only a small part of what was doable with the Tesco Dataset and there is still a lot of valuable information to extract from it.
 
 
 
